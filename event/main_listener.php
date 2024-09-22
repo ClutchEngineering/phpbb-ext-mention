@@ -122,7 +122,7 @@ class main_listener implements EventSubscriberInterface
 		$configurator = $event['configurator'];
 		$configurator->BBCodes->addCustom(
 			'[smention u={NUMBER?} g={NUMBER?}]{TEXT}[/smention]',
-			'<em class="mention">@{TEXT}</em>'
+			'<a href="./memberlist.php?mode=viewprofile&un={TEXT}" class="mention">@{TEXT}</a>'
 		);
 	}
 
